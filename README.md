@@ -1,8 +1,9 @@
+![alt text](https://i.imgur.com/RsQRjfy.png)
 # Big-Sur-Guide
-1 - Starting Off ------------------------
 
+## Preparation 
 
-1. Prep your machine and get ready for a world of pain. This takes a lot of time and dedication, so be prepared.
+1. Prep your machine and get ready for some work!. This takes a lot of time and dedication, so be prepared!
 
 2. You're going to want to download VMware fusion and paragon hard disk manager from their respective websites 
 VMware - https://my.vmware.com/web/vmware/downloads/details?downloadGroup=FUS-1155&productId=798&rPId=46541
@@ -15,7 +16,7 @@ Paragon Hard Disk Manager - https://www.paragon-software.com/hdm-mac/
 4. after the download, go into macOS downloads folder, developer, and into the 10.16 macOS Beta folder in that. there should be an InstallAssistant.pkg. Run this, and when it's done, the Install MacOS Beta.app should be in your applications folder. 
 
 
-2 - Getting the VM set up and installing macOS ------------------------
+## Getting the VM set up and installing macOS.
 
 
 1. Open VMware and get it set up with a free trial. Make a new "custom" VM and set it up with the macOS 10.15 presets. 
@@ -43,7 +44,7 @@ Paragon Hard Disk Manager - https://www.paragon-software.com/hdm-mac/
 12. If there is no APFS snapshot and `diskutil info /` returns a drive such as disk2s5, skip the next section. If not, follow these steps.
 
 
-3 - Fixing APFS Snapshot ---------------------
+## Fixing APFS Snapshot
 
 
 1. Boot into the installer drive again in VMware. 
@@ -67,7 +68,7 @@ Paragon Hard Disk Manager - https://www.paragon-software.com/hdm-mac/
 9. Reboot into the Big Sur desktop and make sure that running `sudo mount -uw /` returns no errors and that running `diskutil info /` returns a disk such as disk2s5 and not a snapshot such as disk2s5s1
 
 
-4 - Prepping Big Sur and putting it on the USB -----------------------
+## Making Big Sur USB 
 
 
 If you didn't have an APFS snapshot, you should be here, and if you did, and you went through the steps in the section above, you should be caught up.
@@ -85,7 +86,7 @@ If you didn't have an APFS snapshot, you should be here, and if you did, and you
 (If you want to be sure that the command is working, and are willing to do some more work, use homebrew to install "coreutils" and run the same command as before, replacing "dd" with "gdd" and ending the command with "status=progress")
 
 
-5 - Waiting? (Updating EFI folder) -----------------------
+## Updating EFI folder
 
 
 This section should be referred to throughout, as it is a separate task than everything else and can be worked on in stages to maximize effort and time. To boot Big Sur on bare metal, you need a couple things: OC 0.6.0 compiled from source, all your kexts latest versions, compiled from source, and some minor changes to your config.plist. This covers these.
@@ -121,7 +122,7 @@ You may work on this section at any time when waiting for tasks to get done from
 13. NVRAM > Delete > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > type String - value booter-fileset-kernel
 
 
-6 - Booting ---------------------------------------
+## Boot Time
 
 
 1. Once your EFI folder is edited and taken care of, and all running tasks are done, make sure to test your OC build by booting back into your non-Big-Sur macOS and verify that everything works
@@ -137,7 +138,7 @@ You may work on this section at any time when waiting for tasks to get done from
 6. When you're done fixing problems and can boot into it, with as little odd behaviors as possible, then move on to the next section.
 
 
-7 - Prepping Your Final Install ------------------------
+## Final Install
 
 1. Boot into your main macOS, and open VMware again, and open your VM's settings.
 
@@ -169,7 +170,7 @@ You may work on this section at any time when waiting for tasks to get done from
 
 14. Once it's done, verify that the copying worked.
 
-8 - Finishing up -----------------------------
+## Last Part and near the end :)
 
 1. Reboot your computer into your Big Sur USB
 

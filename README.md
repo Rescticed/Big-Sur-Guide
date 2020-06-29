@@ -86,3 +86,8 @@ You may work on this section at any time when waiting for tasks to get done from
 4. Reboot into your Big Sur partition and set up as normal!
 
 5. Thats it! You successfully installed Big Sur to your drive!
+
+## Credits
+
+iJB Thanks for the Information!
+

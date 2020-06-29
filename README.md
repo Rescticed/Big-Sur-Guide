@@ -49,11 +49,13 @@ You may work on this section at any time when waiting for tasks to get done from
 
 (if you're using SMCBatteryManager, then for the time being, use RehabMan's ACPIBatteryManager instead)
 
-11. Config file edits
+11. Config file edits :
 
-12. NVRAM > Add > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > booter-fileset-kernel - type Data - value 00
+12. `NVRAM > Add > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > booter-fileset-kernel - type Data - value 00`
 
-13. NVRAM > Delete > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > type String - value booter-fileset-kernel
+13. `NVRAM > Delete > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > type String - value booter-fileset-kernel`
+
+14. Boot Arguments `-v -no_compat_check vmscgen=x -lilubetall`
 
 
 ## Boot Time

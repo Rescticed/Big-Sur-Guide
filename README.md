@@ -89,5 +89,6 @@ You may work on this section at any time when waiting for tasks to get done from
 
 ## Credits
 
-iJB Thanks for the Information!
+iJB Thanks for the Information! (Hackintosh x86 Admin)
+StarPlayer132 - MacRumours.com
 
